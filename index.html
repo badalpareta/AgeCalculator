@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+    <header>
+        <h1 id="main-heading"class="accent">AGE CALCULATOR</h1>
+        <h3 id="demo"class="light">Want to know how old you are?</h3>
+    </header>
+    <main>
+       
+        <div class="main-container">
+            <form id="ageCalc">
+                <label for="dob">Enter Your Date of Birth</label><br>
+                <input type="date"class="dates"id="dob"><br>
+                <label >Age till the Date</label><br>
+                <input type="date"class="dates"id="date"><br>
+                <br>               
+                <input type="button"class="button" onclick="calculateAge()"value="Calculate">
+                <input type="button"class="button" onclick="resetPage()"value="Reset">
+            </form>
+           </div>
+           <label class="accent" id="footer">&copy by Badal Pareta</label>
+    </main>
+    <h2 class="result" id="result"></h2>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+    
+</html>
