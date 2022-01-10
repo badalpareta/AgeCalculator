@@ -29,6 +29,22 @@ function calculateAge(){
     let ageDays=(timeDiff/days).toFixed(0);
     document.getElementById("result").innerHTML=ageYears+" Years | "+ageMonths+" Months | "+ageDays+" Days";
 }
+function minimum(){
+    let birth=document.getElementById("dob");
+let birthDate = birth.valueAsDate.getDate();
+let birthYear=birth.valueAsDate.getFullYear();
+let birthMonth=birth.valueAsDate.getMonth()+1;
+
+if (birthDate<10)
+birthDate="0"+birthDate;
+
+if(birthMonth<10)
+birthMonth="0"+birthMonth;
+
+let birthDateStr=birthYear+"-"+birthMonth+"-"+birthDate;
+
+document.getElementById("date").setAttribute("min",birthDateStr);
+}
 function resetPage(){
     document.getElementById("dob").valueAsDate=null;
 }
