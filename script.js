@@ -27,6 +27,9 @@ function calculateAge(){
     let ageYears=(timeDiff/years).toFixed(2);
     let ageMonths=(ageYears*12).toFixed(2);
     let ageDays=(timeDiff/days).toFixed(0);
+    if(ageYears<0||ageMonths<0||ageDays<0)
+    document.getElementById("result").innerHTML="Enter a Valid Input";
+    else
     document.getElementById("result").innerHTML=ageYears+" Years | "+ageMonths+" Months | "+ageDays+" Days";
 }
 function minimum(){
